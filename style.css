@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Bungee+Inline&family=Oxanium:wght@200..800&display=swap');
+
+:root {
+    --color1: #B9E673;
+    --color2: #E13200;
+    --color3: #FCCAE5;
+    --color4: #513E39;
+    --color5: #155741;
+
+}
+
+.bg-1 {
+    background-color: #FFF40F;
+}
+.bg-2 {
+    background-color: #BBE776;
+}
+.bg-3 {
+    background-color: #FCCAE5;
+}
+.bg-4 {
+    background-color: #E13200;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+a:hover {
+    transform: scale(1.05);
+    text-decoration: none;
+}
+
+.color-1 {
+    color: var(--color1);
+}
+
+.color-2 {
+    color: var(--color2);
+}
+
+.color-3 {
+    color: var(--color3);
+}
+
+.color-4 {
+    color: var(--color4);
+}
+
+.color-5 {
+    color: var(--color5);
+}
+
+.font-agbalumo {
+    font-family: "Agbalumo", system-ui;
+}
+
+.font-bungee {
+    font-family: "Bungee Inline", sans-serif;
+}
+
+.font-size-16 {
+    font-size: 1rem;
+}
+
+.font-size-18 {
+    font-size: 1.125rem;
+}
+
+.font-size-20 {
+    font-size: 1.25rem;
+}
+
+.font-size-26 {
+    font-size: 1.625rem;
+}
+
+.font-size-32 {
+    font-size: 2rem;
+}
+
+.font-size-40 {
+    font-size: 2.5rem;
+}
+
+.font-size-48 {
+    font-size: 3rem;
+}
+
+.font-size-128 {
+    font-size: 8rem;
+    line-height: 1.3;
+}
+
+.font-size-213 {
+    font-size: 13.3125rem;
+}
+
+.font-weight-700 {
+    font-weight: 700;
+}
+
+.custom-container {
+    max-width: 90rem;
+    width: 95%;
+    margin-inline: auto;
+}
+
+.sm-container {
+    max-width: 30.25rem;
+}
+
+img {
+    width: 100%;
+}
+
+
+body {
+    font-family: "Oxanium", sans-serif;
+    font-weight: 400;
+}
+
+header {
+    background-color: var(--color1);
+}
+
+.first-marquee {
+    border-bottom: solid 2px var(--color2);
+}
+
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+}
+
+.social {
+    width: 2.5rem;
+    height: 2.5rem;
+    border: solid 1.5px var(--color2);
+    color: var(--color2);
+    padding: 0.125rem;
+    border-radius: 0.75rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.custom-btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0.75rem 2rem;
+    background-color: var(--color2);
+    color: var(--color1);
+    border-radius: 3rem;
+}
+
+.hero {
+    height: calc(100vh - 9.25rem);
+    background: url('images/hero.png') center center/cover no-repeat;
+    background-position: bottom;
+}
+
+.hero-content {
+    position: absolute;
+    bottom: 5%;
+}
+
+.about {
+    background-color: var(--color2);
+}
+
+.about-content {
+    min-height: 40.625rem;
+    padding-block: 3rem;
+    z-index: 2;
+    position: relative;
+}
+
+.second-marquee {
+    border-block: solid 2px var(--color1);
+}
+
+.cloud-half {
+    top: 0;
+    left: 2rem;
+    max-width: 19.25rem;
+}
+
+.cloud-full {
+    top: 10%;
+    right: 0;
+    max-width: 19.25rem;
+}
+
+.small-cat {
+    bottom: 0;
+    left: 0;
+    max-width: 22rem;
+}
+
+.roadmap {
+    background: url("images/bg1.png") center center/cover no-repeat;
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+}
+
+.roadmap .cloud-half {
+    left: 5%;
+}
+
+
+/* Phases */
+
+.phases {
+    display: flex;
+}
+
+.phase-container {
+    width: 100%;
+    max-width: 39.25rem;
+    padding-top: 2rem;
+}
+
+.phase-container-right {
+    padding-top: 7rem;
+}
+
+.phase-title {
+    border-bottom: solid 2px var(--color2);
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.circle {
+    width: 100%;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 28rem;
+}
+
+.phase .flower1 {
+    bottom: -50%;
+    right: 0;
+    max-width: 3.75rem;
+
+}
+
+.phase-right .sm-container {
+    margin-left: auto;
+}
+
+.phase-right .flower1 {
+    left: 0;
+
+}
+
+.flower2 {
+    max-width: 4.625rem;
+}
+
+
+/* Grids */
+.grids {
+    display: grid;
+    grid-template-columns: 2fr 1.7fr;
+    background-color: var(--color5);
+    padding: 2px;
+    align-items: center;
+    gap: 2px;
+}
+
+.right-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2px;
+}
+
+.grid-content {
+    padding: 3.5rem 2.5rem;
+    line-height: 1.7;
+}
+
+.grid-img {
+    background: url("images/cat.png") center center/cover no-repeat;
+    width: 100%;
+    height: 100%;
+    background-position: left;
+}
+
+.footer {
+    background: url("images/bg2.png") center center/cover no-repeat;
+    padding-block: 3rem;
+}
+
+.footer .social {
+    width: 3.5rem;
+    height: 3.5rem;
+    border: solid 1.5px var(--color1);
+    color: var(--color1);
+    padding: 0.125rem;
+    border-radius: 0.75rem;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-text {
+    line-height: 1.1;
+    margin-top: 3rem;
+}
+
+
+@media (max-width: 576px) {
+    .cloud-half {
+        display: none;
+    }
+    .small-cat,
+    .cloud-full {
+        opacity: 0.5;
+    }
+
+    .right-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-img {
+        height: 30rem;
+    }
+
+    .hero {
+        background-image: url("images/hero2.JPG");
+    }
+
+    .hero-content {
+        bottom: 16%;
+    }
+
+
+    .font-size-128 {
+        font-size: 5rem;
+    }
+    
+}
+
+
+@media (max-width: 768px) {
+
+    .circle {
+        display: none;
+    }
+
+    .phases {
+        display: block;
+    }
+
+    .phase .flower1 {
+        left: 0;
+    }
+
+    .phase-container {
+        max-width: 50rem;
+    }
+
+    .sm-container {
+        margin-left: auto;
+        max-width: 100%;
+        padding-left: 4.5rem;
+    }
+    
+    .phase-container-right {
+        padding-top: inherit;
+    }
+
+    .grids {
+        grid-template-columns: 1fr;
+    }
+
+    .font-size-213 {
+        font-size: 6rem !important;
+    }
+
+}
+
+@media (max-width: 992px) { 
+    .font-size-213 {
+        font-size: 10rem;
+    }
+ }
+
+@media (max-width: 1500px) {
+    html {
+        font-size: 10px;
+    }
+}
