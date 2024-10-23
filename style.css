@@ -6,18 +6,33 @@
     --color3: #FCCAE5;
     --color4: #513E39;
     --color5: #155741;
+    --font-size-16: 1.125rem;
+    --font-size-18: 1.125rem;
+    --font-size-20: 1.25rem;
+    --font-size-26: 1.625rem;
+    --font-size-32: 2rem;
+    --font-size-40: 2.5rem;
+    --font-size-48: 3.5rem;
+    --font-size-128: 8rem;
+    --font-size-213: 17rem;
+}
 
+html {
+    font-size: 11.3px;
 }
 
 .bg-1 {
     background-color: #FFF40F;
 }
+
 .bg-2 {
     background-color: #BBE776;
 }
+
 .bg-3 {
     background-color: #FCCAE5;
 }
+
 .bg-4 {
     background-color: #E13200;
 }
@@ -52,49 +67,46 @@ a:hover {
     color: var(--color5);
 }
 
-.font-agbalumo {
-    font-family: "Agbalumo", system-ui;
-}
 
 .font-bungee {
     font-family: "Bungee Inline", sans-serif;
 }
 
 .font-size-16 {
-    font-size: 1rem;
+    font-size: var(--font-size-16);
 }
 
 .font-size-18 {
-    font-size: 1.125rem;
+    font-size: var(--font-size-18);
 }
 
 .font-size-20 {
-    font-size: 1.25rem;
+    font-size: var(--font-size-20);
 }
 
 .font-size-26 {
-    font-size: 1.625rem;
+    font-size: var(--font-size-26);
 }
 
 .font-size-32 {
-    font-size: 2rem;
+    font-size: var(--font-size-32);
 }
 
 .font-size-40 {
-    font-size: 2.5rem;
+    font-size: var(--font-size-40);
 }
 
 .font-size-48 {
-    font-size: 3rem;
+    font-size: var(--font-size-48);
 }
 
 .font-size-128 {
-    font-size: 8rem;
+    font-size: var(--font-size-128);
     line-height: 1.3;
 }
 
 .font-size-213 {
-    font-size: 13.3125rem;
+    font-size: var(--font-size-213);
 }
 
 .font-weight-700 {
@@ -102,13 +114,12 @@ a:hover {
 }
 
 .custom-container {
-    max-width: 90rem;
     width: 95%;
     margin-inline: auto;
 }
 
 .sm-container {
-    max-width: 30.25rem;
+    max-width: 38.25rem;
 }
 
 img {
@@ -118,7 +129,7 @@ img {
 
 body {
     font-family: "Oxanium", sans-serif;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 header {
@@ -128,6 +139,8 @@ header {
 .first-marquee {
     border-bottom: solid 2px var(--color2);
 }
+
+
 
 
 .social-links {
@@ -148,7 +161,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .custom-btn {
@@ -164,7 +177,6 @@ header {
 .hero {
     height: calc(100vh - 9.25rem);
     background: url('images/hero.png') center center/cover no-repeat;
-    background-position: bottom;
 }
 
 .hero-content {
@@ -181,6 +193,16 @@ header {
     padding-block: 3rem;
     z-index: 2;
     position: relative;
+    height: 95vh;
+}
+
+.about-text {
+    max-width: 80.25rem;
+}
+
+.about .custom-btn {
+    background-color: var(--color1);
+    color: var(--color2);
 }
 
 .second-marquee {
@@ -224,7 +246,7 @@ header {
 
 .phase-container {
     width: 100%;
-    max-width: 39.25rem;
+    max-width: 47.25rem;
     padding-top: 2rem;
 }
 
@@ -295,6 +317,10 @@ header {
     background-position: left;
 }
 
+.cat2 {
+    background-image: url("images/cat2.jpg");
+}
+
 .footer {
     background: url("images/bg2.png") center center/cover no-repeat;
     padding-block: 3rem;
@@ -323,6 +349,7 @@ header {
     .cloud-half {
         display: none;
     }
+
     .small-cat,
     .cloud-full {
         opacity: 0.5;
@@ -332,8 +359,13 @@ header {
         grid-template-columns: 1fr;
     }
 
-    .grid-img {
-        height: 30rem;
+    .grid-img,
+    .grid-content {
+        min-height: 30rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 
     .hero {
@@ -341,18 +373,41 @@ header {
     }
 
     .hero-content {
-        bottom: 16%;
+        bottom: 12%;
+    }
+
+    .hero-text {
+        font-size: 24px;
     }
 
 
-    .font-size-128 {
-        font-size: 5rem;
+    :root {
+        --font-size-16: 16px;
+        --font-size-18: 17px;
+        --font-size-20: 18px;
+        --font-size-26: 24px;
+        --font-size-32: 2rem;
+        --font-size-40: 2.5rem;
+        --font-size-48: 32px;
+        --font-size-128: 5rem;
+        --font-size-213: 13.3125rem;
     }
-    
+
+    .custom-btn {
+        font-size: 14px;
+    }
+
+    html {
+        font-size: 10px;
+    }
+
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
+    .font-size-213 {
+        font-size: 10rem;
+    }
 
     .circle {
         display: none;
@@ -375,29 +430,31 @@ header {
         max-width: 100%;
         padding-left: 4.5rem;
     }
-    
+
     .phase-container-right {
         padding-top: inherit;
+        margin-left: 0 !important;
     }
 
+}
+
+
+
+@media (max-width: 1200px) {
+      
     .grids {
         grid-template-columns: 1fr;
     }
 
     .font-size-213 {
-        font-size: 6rem !important;
+        font-size: 9rem !important;
     }
-
 }
 
-@media (max-width: 992px) { 
-    .font-size-213 {
-        font-size: 10rem;
-    }
- }
 
-@media (max-width: 1500px) {
+
+@media (min-width: 1500px) {
     html {
-        font-size: 10px;
+        font-size: 17px;
     }
 }
