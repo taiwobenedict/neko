@@ -9,10 +9,12 @@
     --font-size-16: 1.125rem;
     --font-size-18: 1.125rem;
     --font-size-20: 1.25rem;
+    --font-size-23: 1.4375rem;
     --font-size-26: 1.625rem;
     --font-size-32: 2rem;
     --font-size-40: 2.5rem;
     --font-size-48: 3.5rem;
+    --font-size-72: 4.5rem;
     --font-size-128: 8rem;
     --font-size-213: 17rem;
 }
@@ -84,6 +86,10 @@ a:hover {
     font-size: var(--font-size-20);
 }
 
+.font-size-23 {
+    font-size: var(--font-size-23);
+}
+
 .font-size-26 {
     font-size: var(--font-size-26);
 }
@@ -98,6 +104,10 @@ a:hover {
 
 .font-size-48 {
     font-size: var(--font-size-48);
+}
+
+.font-size-72 {
+    font-size: var(--font-size-72);
 }
 
 .font-size-128 {
@@ -203,6 +213,13 @@ header {
 .about .custom-btn {
     background-color: var(--color1);
     color: var(--color2);
+    font-size: var(--font-size-32);
+    font-weight: 700;
+
+}
+
+.about-btn {
+    margin-top: 5rem;
 }
 
 .second-marquee {
@@ -231,6 +248,10 @@ header {
     background: url("images/bg1.png") center center/cover no-repeat;
     padding-top: 4rem;
     padding-bottom: 5rem;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .roadmap .cloud-half {
@@ -288,13 +309,24 @@ header {
     max-width: 4.625rem;
 }
 
+.index-1 {
+    z-index: -1;
+}
+
+.grid-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color1);
+    color: var(--color2);
+}
 
 /* Grids */
 .grids {
     display: grid;
-    grid-template-columns: 2fr 1.7fr;
-    background-color: var(--color5);
-    padding: 2px;
+    grid-template-columns: 1fr 1fr;
+    /* padding: 2px; */
     align-items: center;
     gap: 2px;
 }
@@ -315,6 +347,27 @@ header {
     width: 100%;
     height: 100%;
     background-position: left;
+}
+
+.tokenomics {
+    padding-top: 3rem;
+}
+
+.token-heading {
+    margin-bottom: 1rem;
+}
+
+
+.token {
+    padding: 0.875rem 1rem;
+    border: solid 0.125rem var(--color5);
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    width: fit-content;
+    border-radius: 0.75rem;
+    margin-bottom: 2.5rem;
+    text-transform: uppercase;
 }
 
 .cat2 {
@@ -359,7 +412,7 @@ header {
         grid-template-columns: 1fr;
     }
 
-    .grid-img,
+   
     .grid-content {
         min-height: 30rem;
         display: flex;
@@ -380,12 +433,25 @@ header {
         font-size: 24px;
     }
 
+
+    .token-heading {
+        margin-bottom: 2.5rem;
+        text-align: center;
+    }
+
+    .ca div {
+        font-size: 4.4vw;
+    }
  
+
+
+
 
     :root {
         --font-size-16: 16px;
         --font-size-18: 17px;
         --font-size-20: 18px;
+        --font-size-23: 18px;
         --font-size-26: 24px;
         --font-size-32: 2rem;
         --font-size-40: 2.5rem;
@@ -398,16 +464,19 @@ header {
         font-size: 14px;
     }
 
+
+
     html {
         font-size: 10px;
     }
 
 }
-@media (max-width: 768px) { 
+
+@media (max-width: 768px) {
     .contact-address {
         font-size: 3.5vw !important;
     }
- }
+}
 
 @media (max-width: 992px) {
     .font-size-213 {
@@ -441,15 +510,24 @@ header {
         margin-left: 0 !important;
     }
 
+    .grids {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-img {
+        height: 40rem;
+    }
+
+    .grid-container {
+        min-height: auto;
+    }
+
 }
 
 
 
 @media (max-width: 1200px) {
-      
-    .grids {
-        grid-template-columns: 1fr;
-    }
+
 
     .font-size-213 {
         font-size: 9rem !important;
