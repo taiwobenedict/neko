@@ -186,7 +186,7 @@ header {
 
 .hero {
     height: calc(100vh - 9.25rem);
-    background: url('images/hero.png') center center/cover no-repeat;
+    background: url('images/hero-img.PNG') center center/cover no-repeat;
 }
 
 .hero-content {
@@ -343,10 +343,8 @@ header {
 }
 
 .grid-img {
-    background: url("images/cat.png") center center/cover no-repeat;
-    width: 100%;
+    background: url("images/cat3.png") center center/cover no-repeat;
     height: 100%;
-    background-position: left;
 }
 
 .tokenomics {
@@ -421,9 +419,6 @@ header {
         flex-direction: column;
     }
 
-    .hero {
-        background-image: url("images/hero2.JPG");
-    }
 
     .hero-content {
         bottom: 12%;
@@ -473,12 +468,20 @@ header {
 }
 
 @media (max-width: 768px) {
+
+
     .contact-address {
         font-size: 3.5vw !important;
     }
 }
 
 @media (max-width: 992px) {
+    
+    .hero {
+        background-image: url("images/hero2.JPG");
+        background-position: left;
+    }
+
     .font-size-213 {
         font-size: 10rem;
     }
@@ -527,6 +530,9 @@ header {
 
 
 @media (max-width: 1200px) {
+    .hero {
+        background-position:  70%;
+    }
 
 
     .font-size-213 {
